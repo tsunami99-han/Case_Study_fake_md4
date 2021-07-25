@@ -8,29 +8,45 @@ com/codegym/model/Role.java
  com.codegym.model.Role
 com/codegym/model/Product.java
  com.codegym.model.Product
-com/codegym/repository/ICustomerRepository.java
- com.codegym.repository.ICustomerRepository
+com/codegym/controller/OrderController.java
+ com.codegym.controller.OrderController
 com/codegym/model/Category.java
  com.codegym.model.Category
 com/codegym/repository/ICategoryRepository.java
  com.codegym.repository.ICategoryRepository
 com/codegym/repository/IRoleRepository.java
  com.codegym.repository.IRoleRepository
-com/codegym/model/Order.java
- com.codegym.model.Order
-com/codegym/repository/IReviewRepository.java
- com.codegym.repository.IReviewRepository
-com/codegym/model/User.java
- com.codegym.model.User
-com/codegym/config/AppInit.java
- com.codegym.config.AppInit
 com/codegym/config/AppConfig.java
  com.codegym.config.AppConfig
+com/codegym/repository/IReviewRepository.java
+ com.codegym.repository.IReviewRepository
+com/codegym/repository/ICommentRepository.java
+ com.codegym.repository.ICommentRepository
+com/codegym/config/AppInit.java
+ com.codegym.config.AppInit
+com/codegym/servie/user/IUserService.java
+ com.codegym.servie.user.IUserService
+com/codegym/formatter/ProductFormatter.java
+ com.codegym.formatter.ProductFormatter
+com/codegym/model/User.java
+ com.codegym.model.User
+com/codegym/servie/IGeneralService.java
+ com.codegym.servie.IGeneralService
 com/codegym/model/OrderDetail.java
  com.codegym.model.OrderDetail
+com/codegym/model/Order.java
+ com.codegym.model.Order
+com/codegym/controller/ProductController.java
+ com.codegym.controller.ProductController
+com/codegym/controller/CategoryController.java
+ com.codegym.controller.CategoryController
 com/codegym/model/Comment.java
  com.codegym.model.Comment
 com/codegym/model/Review.java
  com.codegym.model.Review
-com/codegym/repository/ICommentRepository.java
- com.codegym.repository.ICommentRepository
+com/codegym/servie/user/UserService.java
+ com.codegym.servie.user.UserService
+com/codegym/controller/UserController.java
+ com.codegym.controller.UserController
+com/codegym/repository/IUserRepository.java
+ com.codegym.repository.IUserRepository

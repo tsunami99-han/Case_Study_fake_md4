@@ -11,6 +11,7 @@ public class User {
     private long id;
     private String username;
     private String password;
+    private boolean status = true;
     private String fullName;
     private int age;
     private LocalDate dateOfBirth;
@@ -26,6 +27,14 @@ public class User {
 
     public String getUsername() {
         return username;
+    }
+
+    public boolean isStatus() {
+        return status;
+    }
+
+    public void setStatus(boolean status) {
+        this.status = status;
     }
 
     public void setUsername(String username) {
