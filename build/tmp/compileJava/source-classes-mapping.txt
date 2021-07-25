@@ -16,8 +16,8 @@ com/codegym/repository/ICategoryRepository.java
  com.codegym.repository.ICategoryRepository
 com/codegym/repository/IRoleRepository.java
  com.codegym.repository.IRoleRepository
-com/codegym/model/Review.java
- com.codegym.model.Review
+com/codegym/model/Order.java
+ com.codegym.model.Order
 com/codegym/repository/IReviewRepository.java
  com.codegym.repository.IReviewRepository
 com/codegym/model/User.java
@@ -28,5 +28,9 @@ com/codegym/config/AppConfig.java
  com.codegym.config.AppConfig
 com/codegym/model/OrderDetail.java
  com.codegym.model.OrderDetail
-com/codegym/model/Order.java
- com.codegym.model.Order
+com/codegym/model/Comment.java
+ com.codegym.model.Comment
+com/codegym/model/Review.java
+ com.codegym.model.Review
+com/codegym/repository/ICommentRepository.java
+ com.codegym.repository.ICommentRepository

@@ -11,7 +11,7 @@ public class Review {
     private Long id;
 
     private int point;
-    private String comment;
+    private String content;
     private LocalDate time;
     @ManyToOne
     private Product product;
@@ -39,11 +39,11 @@ public class Review {
     }
 
     public String getComment() {
-        return comment;
+        return content;
     }
 
     public void setComment(String comment) {
-        this.comment = comment;
+        this.content = comment;
     }
 
     public String getImage() {
