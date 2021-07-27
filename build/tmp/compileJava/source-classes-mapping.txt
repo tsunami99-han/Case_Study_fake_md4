@@ -1,36 +1,48 @@
 com/codegym/repository/IProductRepository.java
  com.codegym.repository.IProductRepository
+com/codegym/formatter/ProductFormatter.java
+ com.codegym.formatter.ProductFormatter
 com/codegym/repository/IOrderDetailRepository.java
  com.codegym.repository.IOrderDetailRepository
-com/codegym/repository/IOrderRepository.java
- com.codegym.repository.IOrderRepository
 com/codegym/model/Role.java
  com.codegym.model.Role
-com/codegym/model/Product.java
- com.codegym.model.Product
-com/codegym/repository/ICustomerRepository.java
- com.codegym.repository.ICustomerRepository
-com/codegym/model/Category.java
- com.codegym.model.Category
-com/codegym/repository/ICategoryRepository.java
- com.codegym.repository.ICategoryRepository
-com/codegym/repository/IRoleRepository.java
- com.codegym.repository.IRoleRepository
-com/codegym/model/Order.java
- com.codegym.model.Order
+com/codegym/repository/ICommentRepository.java
+ com.codegym.repository.ICommentRepository
 com/codegym/repository/IReviewRepository.java
  com.codegym.repository.IReviewRepository
 com/codegym/model/User.java
  com.codegym.model.User
-com/codegym/config/AppInit.java
- com.codegym.config.AppInit
-com/codegym/config/AppConfig.java
- com.codegym.config.AppConfig
+com/codegym/model/Product.java
+ com.codegym.model.Product
 com/codegym/model/OrderDetail.java
  com.codegym.model.OrderDetail
+com/codegym/model/Category.java
+ com.codegym.model.Category
+com/codegym/model/Order.java
+ com.codegym.model.Order
+com/codegym/repository/IRoleRepository.java
+ com.codegym.repository.IRoleRepository
+com/codegym/config/AppInit.java
+ com.codegym.config.AppInit
+com/codegym/repository/ICategoryRepository.java
+ com.codegym.repository.ICategoryRepository
+com/codegym/config/AppConfig.java
+ com.codegym.config.AppConfig
+com/codegym/controller/CategoryController.java
+ com.codegym.controller.CategoryController
 com/codegym/model/Comment.java
  com.codegym.model.Comment
 com/codegym/model/Review.java
  com.codegym.model.Review
-com/codegym/repository/ICommentRepository.java
- com.codegym.repository.ICommentRepository
+com/codegym/repository/IOrderRepository.java
+ com.codegym.repository.IOrderRepository
+com/codegym/repository/IUserRepository.java
+ com.codegym.repository.IUserRepository
+com/codegym/servie/IUerService.java
+ com.codegym.servie.IUerService
+com/codegym/servie/UserService.java
+ com.codegym.servie.UserService
+com/codegym/servie/IGeneralService.java
+ com.codegym.servie.IGeneralService
+com/codegym/controller/UserController.java
+ com.codegym.controller.UserController
