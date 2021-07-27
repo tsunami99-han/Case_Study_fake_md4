@@ -1,7 +1,8 @@
 package com.codegym.config;
 
 import com.codegym.formatter.CategoryFormatter;
-import com.codegym.servie.category.CategoryService;
+
+import com.codegym.service.category.CategoryService;
 import org.springframework.beans.BeansException;
 import org.springframework.beans.factory.annotation.Qualifier;
 import org.springframework.beans.factory.annotation.Value;
@@ -10,6 +11,7 @@ import org.springframework.context.ApplicationContextAware;
 import org.springframework.context.annotation.Bean;
 import org.springframework.context.annotation.ComponentScan;
 import org.springframework.context.annotation.Configuration;
+import org.springframework.context.annotation.PropertySource;
 import org.springframework.data.jpa.repository.config.EnableJpaRepositories;
 import org.springframework.data.web.config.EnableSpringDataWebSupport;
 import org.springframework.format.FormatterRegistry;
@@ -41,6 +43,7 @@ import java.util.Properties;
 @EnableJpaRepositories("com.codegym.repository") // đánh dấu dự án có sử dụng jpa repository và đường dẫn
 @ComponentScan("com.codegym")// cho Spring biết phải tìm controller ở đâu
 @EnableSpringDataWebSupport
+@PropertySource("classpath:upload_file.properties")
 public class AppConfig implements WebMvcConfigurer, ApplicationContextAware {
 
     @Value("${file-upload}")
@@ -133,9 +136,10 @@ public class AppConfig implements WebMvcConfigurer, ApplicationContextAware {
     @Bean(name = "multipartResolver")
     public CommonsMultipartResolver getResolver() throws IOException {
         CommonsMultipartResolver resolver = new CommonsMultipartResolver();
-        resolver.setMaxUploadSizePerFile(52428800);
+        resolver.setMaxUploadSizePerFile(5242880);
         return resolver;
     }
+
 
     @Override
     public void addFormatters(FormatterRegistry formatterRegistry){
