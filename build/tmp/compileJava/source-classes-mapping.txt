@@ -22,12 +22,12 @@ com/codegym/model/Order.java
  com.codegym.model.Order
 com/codegym/repository/IRoleRepository.java
  com.codegym.repository.IRoleRepository
-com/codegym/config/AppInit.java
- com.codegym.config.AppInit
+com/codegym/servie/product/ProductService.java
+ com.codegym.servie.product.ProductService
 com/codegym/repository/ICategoryRepository.java
  com.codegym.repository.ICategoryRepository
-com/codegym/config/AppConfig.java
- com.codegym.config.AppConfig
+com/codegym/servie/product/IProductService.java
+ com.codegym.servie.product.IProductService
 com/codegym/repository/IOrderRepository.java
  com.codegym.repository.IOrderRepository
 com/codegym/model/Comment.java
@@ -44,3 +44,9 @@ com/codegym/servie/category/ICategoryService.java
  com.codegym.servie.category.ICategoryService
 com/codegym/controller/CategoryController.java
  com.codegym.controller.CategoryController
+com/codegym/config/AppInit.java
+ com.codegym.config.AppInit
+com/codegym/config/AppConfig.java
+ com.codegym.config.AppConfig
+com/codegym/controller/ProductController.java
+ com.codegym.controller.ProductController
