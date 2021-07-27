@@ -5,6 +5,9 @@
     <title>Title</title>
 </head>
 <body>
+<th:block th:if="${message}">
+    <p th:text="${message}"></p>
+</th:block>
 <table>
     <tr>
         <th>Name</th>
@@ -12,13 +15,16 @@
         <th>Quantity</th>
         <th>Image</th>
         <th>Category</th>
+        <th colspan="2">Action</th>
     </tr>
-    <tr th:each="p:${products}">
-        <td th:text="${p.name}"></td>
-        <td th:text="${p.price}"></td>
-        <td th:text="${p.quantity}"></td>
-        <td><img width="100" height="100" th:src="@{'/image/' + ${p.image}}" alt=""></td>
-        <td th:text="${p.category.name}"></td>
+    <tr th:each="product:${products}">
+        <td th:text="${product.name}"></td>
+        <td th:text="${product.price}"></td>
+        <td th:text="${product.quantity}"></td>
+        <td><img width="100" height="100" th:src="@{'/image/' + ${product.image}}" alt=""></td>
+        <td th:text="${product.category.name}"></td>
+        <td><a th:href="@{/products/{id}/edit(id=${product.id})}">edit</a></td>
+        <td><a th:href="@{/products/{id}/delete(id=${product.id})}">delete</a></td>
     </tr>
 </table>
 </body>

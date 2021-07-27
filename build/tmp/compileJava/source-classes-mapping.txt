@@ -20,8 +20,8 @@ com/codegym/model/OrderDetail.java
  com.codegym.model.OrderDetail
 com/codegym/repository/ICategoryRepository.java
  com.codegym.repository.ICategoryRepository
-com/codegym/controller/ProductController.java
- com.codegym.controller.ProductController
+com/codegym/controller/UserController.java
+ com.codegym.controller.UserController
 com/codegym/controller/CategoryController.java
  com.codegym.controller.CategoryController
 com/codegym/service/category/CategoryService.java
@@ -64,5 +64,5 @@ com/codegym/formatter/RoleFormatter.java
  com.codegym.formatter.RoleFormatter
 com/codegym/service/role/RoleService.java
  com.codegym.service.role.RoleService
-com/codegym/controller/UserController.java
- com.codegym.controller.UserController
+com/codegym/controller/ProductController.java
+ com.codegym.controller.ProductController
