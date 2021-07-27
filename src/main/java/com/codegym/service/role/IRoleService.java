@@ -1,2 +1,7 @@
-package com.codegym.service.role;public interface IRoleService {
+package com.codegym.service.role;
+
+import com.codegym.model.Role;
+import com.codegym.service.IGeneralService;
+
+public interface IRoleService extends IGeneralService<Role> {
 }

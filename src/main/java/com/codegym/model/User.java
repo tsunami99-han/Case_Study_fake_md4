@@ -13,7 +13,6 @@ public class User {
     private String password;
     private boolean status = true;
     private String fullName;
-    private int age;
     private LocalDate dateOfBirth;
     private String address;
     private String phoneNum;
@@ -71,14 +70,6 @@ public class User {
 
     public void setId(long id) {
         this.id = id;
-    }
-
-    public int getAge() {
-        return age;
-    }
-
-    public void setAge(int age) {
-        this.age = age;
     }
 
     public LocalDate getDateOfBirth() {

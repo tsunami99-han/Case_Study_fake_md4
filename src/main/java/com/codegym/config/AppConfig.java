@@ -2,7 +2,10 @@ package com.codegym.config;
 
 import com.codegym.formatter.CategoryFormatter;
 
+import com.codegym.formatter.LocalDateFormatter;
+import com.codegym.formatter.RoleFormatter;
 import com.codegym.service.category.CategoryService;
+import com.codegym.service.role.RoleService;
 import org.springframework.beans.BeansException;
 import org.springframework.beans.factory.annotation.Qualifier;
 import org.springframework.beans.factory.annotation.Value;
@@ -144,6 +147,11 @@ public class AppConfig implements WebMvcConfigurer, ApplicationContextAware {
     @Override
     public void addFormatters(FormatterRegistry formatterRegistry){
         formatterRegistry.addFormatter(new CategoryFormatter(applicationContext.getBean(CategoryService.class)));
+        LocalDateFormatter stringToLocalDateFormatter = new
+                LocalDateFormatter ("yyyy-MM-dd");
+        formatterRegistry.addFormatter(stringToLocalDateFormatter);
+        formatterRegistry.addFormatter(new RoleFormatter(applicationContext.getBean(RoleService.class)));
     }
+
 
 }
