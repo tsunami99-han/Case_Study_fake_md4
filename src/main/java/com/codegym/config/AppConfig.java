@@ -137,5 +137,8 @@ public class AppConfig implements WebMvcConfigurer, ApplicationContextAware {
         return resolver;
     }
 
-
+    @Override
+    public void addFormatters(FormatterRegistry formatterRegistry){
+        formatterRegistry.addFormatter(new ProductFormatter(applicationContext.getBean(CategoryService.class)));
+    }
 }

@@ -40,7 +40,7 @@ public class CategoryController {
         return modelAndView;
     }
     @PostMapping("edit")
-    public String updateCategory(@ModelAttribute Category category){
+    public String update(@ModelAttribute Category category){
         iCategoryService.save(category);
         return "redirect:/categories";
     }
