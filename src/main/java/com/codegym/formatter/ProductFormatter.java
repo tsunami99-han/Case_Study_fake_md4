@@ -1,14 +1,13 @@
 package com.codegym.formatter;
 
 import com.codegym.model.Category;
-import com.codegym.servie.category.ICategoryService;
+import com.codegym.service.category.ICategoryService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.format.Formatter;
 import org.springframework.stereotype.Component;
 
 import java.text.ParseException;
 import java.util.Locale;
-import java.util.Optional;
 
 @Component
 public class ProductFormatter implements Formatter<Category> {

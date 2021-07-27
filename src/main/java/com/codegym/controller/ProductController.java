@@ -1,9 +1,8 @@
 package com.codegym.controller;
 
 import com.codegym.model.Product;
-import com.codegym.servie.category.ICategoryService;
-import com.codegym.servie.product.IProductService;
-import com.sun.tracing.dtrace.Attributes;
+import com.codegym.service.category.ICategoryService;
+import com.codegym.service.product.IProductService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Controller;
 import org.springframework.web.bind.annotation.*;

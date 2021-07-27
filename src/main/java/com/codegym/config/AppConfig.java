@@ -1,7 +1,7 @@
 package com.codegym.config;
 
 import com.codegym.formatter.ProductFormatter;
-import com.codegym.servie.category.CategoryService;
+import com.codegym.service.category.CategoryService;
 import org.springframework.beans.BeansException;
 import org.springframework.beans.factory.annotation.Qualifier;
 import org.springframework.beans.factory.annotation.Value;

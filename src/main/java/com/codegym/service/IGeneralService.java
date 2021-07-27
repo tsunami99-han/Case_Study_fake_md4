@@ -1,6 +1,4 @@
-package com.codegym.servie;
-
-import com.codegym.model.Category;
+package com.codegym.service;
 
 import java.util.Optional;
 
