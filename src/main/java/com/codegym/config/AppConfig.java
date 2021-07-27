@@ -1,5 +1,7 @@
 package com.codegym.config;
 
+import com.codegym.formatter.CategoryFormatter;
+import com.codegym.servie.category.CategoryService;
 import org.springframework.beans.BeansException;
 import org.springframework.beans.factory.annotation.Qualifier;
 import org.springframework.beans.factory.annotation.Value;
@@ -134,4 +136,10 @@ public class AppConfig implements WebMvcConfigurer, ApplicationContextAware {
         resolver.setMaxUploadSizePerFile(52428800);
         return resolver;
     }
+
+    @Override
+    public void addFormatters(FormatterRegistry formatterRegistry){
+        formatterRegistry.addFormatter(new CategoryFormatter(applicationContext.getBean(CategoryService.class)));
+    }
+
 }
