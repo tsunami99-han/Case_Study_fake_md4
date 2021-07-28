@@ -1,11 +1,14 @@
 package com.codegym.model;
 
+import org.springframework.stereotype.Component;
+
 import javax.persistence.*;
+import javax.validation.Validator;
 import java.time.LocalDate;
 import java.util.Set;
 
 @Entity
-public class User {
+public class User  {
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     private long id;
